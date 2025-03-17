@@ -3,13 +3,8 @@ import "./CurrentWeather.css";
 
 import _01d from "../../assets/icons/01d.png";
 import _02d from "../../assets/icons/02d.png";
-import _03d from "../../assets/icons/03d.png";
-import _04d from "../../assets/icons/04d.png";
-import _09d from "../../assets/icons/09d.png";
-import _10d from "../../assets/icons/10d.png";
-import _11d from "../../assets/icons/11d.png";
-import _13d from "../../assets/icons/13d.png";
-import _50d from "../../assets/icons/50d.png";
+
+
 
 
 
@@ -21,7 +16,7 @@ const CurrentWeather = ({ data }) => {
           <p className="city">{data.city}</p>
           <p className="weather-description">{data.weather[0].description}</p>
         </div>
-        <img src={_01d} alt="weather" className="weather-icon" />
+        <img src={_02d} alt="weather" className="weather-icon" />
         
       </div>
 
