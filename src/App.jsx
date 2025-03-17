@@ -31,9 +31,6 @@ function App() {
       .catch((err) => console.log(err));
   };
 
-  // console.log(currentWeather);
-  // console.log(forecast);
-
   return (
     <div className="container">
       <h2 className="heading">React Location Weather App</h2>
