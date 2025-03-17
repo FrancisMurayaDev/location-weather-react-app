@@ -2,13 +2,13 @@ import React from "react";
 import "./CurrentWeather.css";
 import o1d from "../../assets/icons/01d.png";
 
-const CurrentWeather = () => {
+const CurrentWeather = ({ data }) => {
   return (
     <div className="weather">
       <div className="top">
         <div>
-          <p className="city">London</p>
-          <p className="weather-description">Sunny</p>
+          <p className="city">{data.city}</p>
+          <p className="weather-description">{data.weather[0].description}</p>
         </div>
         <img src={o1d} alt="weather" className="weather-icon" />
       </div>
