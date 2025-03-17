@@ -4,10 +4,6 @@ import "./CurrentWeather.css";
 import _01d from "../../assets/icons/01d.png";
 import _02d from "../../assets/icons/02d.png";
 
-
-
-
-
 const CurrentWeather = ({ data }) => {
   return (
     <div className="weather">
@@ -17,7 +13,6 @@ const CurrentWeather = ({ data }) => {
           <p className="weather-description">{data.weather[0].description}</p>
         </div>
         <img src={_02d} alt="weather" className="weather-icon" />
-        
       </div>
 
       <div className="bottom">
