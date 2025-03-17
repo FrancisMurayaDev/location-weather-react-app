@@ -1,9 +1,10 @@
 import React from 'react'
+import { AsyncPaginate } from 'react-select-async-paginate'
 
 const Search = () => {
   return (
     <div>
-      <h1>Search</h1>
+      <AsyncPaginate />
       
     </div>
   )
