@@ -1,11 +1,14 @@
 import "./App.css";
-import React from "react";
+import React, { useState } from "react";
 import Search from "./Components/Search/Search";
 import CurrentWeather from "./Components/CurrentWeather/CurrentWeather";
 import { WEATHER_API_URL } from "./api";
 import { WEATHER_API_KEY } from "./api";
 
 function App() {
+  const [currentWeather, setCurrentWeather] = useState(null);
+
+
   const handleOnSearchChange = (searchData) => {
     const [lat, lon] = searchData.value.split(" ")
 
