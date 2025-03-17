@@ -5,8 +5,8 @@ import CurrentWeather from "./Components/CurrentWeather/CurrentWeather";
 
 function App() {
   const handleOnSearchChange = (searchData) => {
-    console.log(searchData);
-  };
+    searchData.value.split(" ")
+  }
 
   return (
     <div className="container">
