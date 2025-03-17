@@ -1,25 +1,15 @@
 import React from "react";
 import "./CurrentWeather.css";
-const weatherIcons = {
-  "01d": require("../../assets/icons/01d.png"),
-  "02d": require("../../assets/icons/02d.png"),
-  "03d": require("../../assets/icons/03d.png"),
-  "04d": require("../../assets/icons/04d.png"),
-  "09d": require("../../assets/icons/09d.png"),
-  "10d": require("../../assets/icons/10d.png"),
-  "11d": require("../../assets/icons/11d.png"),
-  "13d": require("../../assets/icons/13d.png"),
-  "50d": require("../../assets/icons/50d.png"),
-};
-// import _01d from "../../assets/icons/01d.png";
-// import _02d from "../../assets/icons/02d.png";
-// import _03d from "../../assets/icons/03d.png";
-// import _04d from "../../assets/icons/04d.png";
-// import _09d from "../../assets/icons/09d.png";
-// import _10d from "../../assets/icons/10d.png";
-// import _11d from "../../assets/icons/11d.png";
-// import _13d from "../../assets/icons/13d.png";
-// import _50d from "../../assets/icons/50d.png";
+
+import _01d from "../../assets/icons/01d.png";
+import _02d from "../../assets/icons/02d.png";
+import _03d from "../../assets/icons/03d.png";
+import _04d from "../../assets/icons/04d.png";
+import _09d from "../../assets/icons/09d.png";
+import _10d from "../../assets/icons/10d.png";
+import _11d from "../../assets/icons/11d.png";
+import _13d from "../../assets/icons/13d.png";
+import _50d from "../../assets/icons/50d.png";
 
 
 
@@ -31,8 +21,7 @@ const CurrentWeather = ({ data }) => {
           <p className="city">{data.city}</p>
           <p className="weather-description">{data.weather[0].description}</p>
         </div>
-        {/* <img src={_01d} alt="weather" className="weather-icon" /> */}
-        <img src={weatherIcons[data.weather[0].icon]} alt="weather" className="weather-icon" />
+        <img src={_01d} alt="weather" className="weather-icon" />
         
       </div>
 
