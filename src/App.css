@@ -2,3 +2,15 @@
   max-width: 1080px;
   margin: 20px auto;
 }
+
+.heading {
+  text-align: center;
+}
+
+.text {
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+}

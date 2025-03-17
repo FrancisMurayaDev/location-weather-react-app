@@ -31,13 +31,15 @@ function App() {
       .catch((err) => console.log(err));
   };
 
-  console.log(currentWeather);
-  console.log(forecast);
+  // console.log(currentWeather);
+  // console.log(forecast);
 
   return (
     <div className="container">
+      <h2 className="heading">React Location Weather App</h2>
       <Search onSearchChange={handleOnSearchChange} />
-      {currentWeather && <CurrentWeather data={currentWeather} />}      
+      {currentWeather && <CurrentWeather data={currentWeather} />}   
+      <p className="text">Built with 💙 by <a href="https://www.linkedin.com/in/francis-muraya/">FrancisMurayaDev</a></p>   
     </div>
   );
 }
